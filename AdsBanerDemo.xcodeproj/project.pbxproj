@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755422421B4E618900D17B94 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755422411B4E618900D17B94 /* ImagePlayerView.m */; };
 		757015AB1B4E131800912E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757015AA1B4E131800912E68 /* main.m */; };
 		757015AE1B4E131800912E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757015AD1B4E131800912E68 /* AppDelegate.m */; };
 		757015B11B4E131800912E68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757015B01B4E131800912E68 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		757015B61B4E131800912E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757015B51B4E131800912E68 /* Images.xcassets */; };
 		757015B91B4E131800912E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757015B71B4E131800912E68 /* LaunchScreen.xib */; };
 		757015C51B4E131800912E68 /* AdsBanerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 757015C41B4E131800912E68 /* AdsBanerDemoTests.m */; };
-		757015D01B4E132B00912E68 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 757015CF1B4E132B00912E68 /* ImagePlayerView.m */; };
 		757015D21B4E168700912E68 /* commodity.png in Resources */ = {isa = PBXBuildFile; fileRef = 757015D11B4E168700912E68 /* commodity.png */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		755422401B4E618900D17B94 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
+		755422411B4E618900D17B94 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		757015A51B4E131800912E68 /* AdsBanerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdsBanerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757015A91B4E131800912E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		757015AA1B4E131800912E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		757015BE1B4E131800912E68 /* AdsBanerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdsBanerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		757015C31B4E131800912E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		757015C41B4E131800912E68 /* AdsBanerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsBanerDemoTests.m; sourceTree = "<group>"; };
-		757015CE1B4E132B00912E68 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
-		757015CF1B4E132B00912E68 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
 		757015D11B4E168700912E68 /* commodity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commodity.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,15 +68,17 @@
 		7554223C1B4E572F00D17B94 /* BannerView */ = {
 			isa = PBXGroup;
 			children = (
-				757015CE1B4E132B00912E68 /* ImagePlayerView.h */,
-				757015CF1B4E132B00912E68 /* ImagePlayerView.m */,
+				755422401B4E618900D17B94 /* ImagePlayerView.h */,
+				755422411B4E618900D17B94 /* ImagePlayerView.m */,
 			);
 			name = BannerView;
+			path = SFXBannerView;
 			sourceTree = "<group>";
 		};
 		7570159C1B4E131800912E68 = {
 			isa = PBXGroup;
 			children = (
+				7554223C1B4E572F00D17B94 /* BannerView */,
 				757015A71B4E131800912E68 /* AdsBanerDemo */,
 				757015C11B4E131800912E68 /* AdsBanerDemoTests */,
 				757015A61B4E131800912E68 /* Products */,
@@ -95,7 +97,6 @@
 		757015A71B4E131800912E68 /* AdsBanerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7554223C1B4E572F00D17B94 /* BannerView */,
 				757015AC1B4E131800912E68 /* AppDelegate.h */,
 				757015AD1B4E131800912E68 /* AppDelegate.m */,
 				757015AF1B4E131800912E68 /* ViewController.h */,
@@ -239,7 +240,7 @@
 				757015B11B4E131800912E68 /* ViewController.m in Sources */,
 				757015AE1B4E131800912E68 /* AppDelegate.m in Sources */,
 				757015AB1B4E131800912E68 /* main.m in Sources */,
-				757015D01B4E132B00912E68 /* ImagePlayerView.m in Sources */,
+				755422421B4E618900D17B94 /* ImagePlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
